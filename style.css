@@ -1,0 +1,9 @@
+#d2{ /* tag selector */
+    height: 100px;
+    width:400px;
+    color: chartreuse;
+}
+
+.para{
+    background-image: url("flower.jpg");
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{ /* tag selector */
+            height: 100px;
+            width:400px;
+            color: blue;
+        }
+
+        #d1{ /* tag selector */
+            height: 100px;
+            width:400px;
+            color: cadetblue;
+        }
+
+       
+    </style>
+    <style src="style.css" role="stylesheet"></style>
+</head>
+<body style="color: brown ;background-color: blueviolet;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <h2>Registration Form</h2>
+    <form action="mypage.html" method="post">
+        <label>Name:</label>
+        <input type="text" name="username" id="username" placeholder="Enter your name">
+
+        <br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" />
+        <br>
+
+        <label>Gender:</label>
+        <input type="radio" value="Male" name="gender">Male
+        <input type="radio" value="Female" name="gender">Female
+
+        <br>
+        <label>Food:</label>
+        <input type="checkbox" >Veg
+        <input type="checkbox" >NonVeg
+
+        <br>
+        
+        <label>DOJ</label>
+        <input type="date">
+
+        <br>
+
+        <label>Comment:</label>
+        <textarea rows="10" cols="10">
+
+        </textarea>
+
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <div id="d1" style="background-color: aqua;">
+        This is a div1 element
+
+    </div>
+
+    <div id="d2" style="background-color: aqua;">
+        This is a div2 element
+
+    </div>
+
+    <p class="para">This is paragraph 1</p>
+    
+    <p class="para">This is paragraph 2</p>
+
+    <textarea class="para"></textarea>
+
+    <b>This is bold</b>
+    <i>This is italic text</i>
+    <em>Sample text</em>
+    <mark>This is a text</mark>
+    <u>This is underline</u>
+    <del>This is a text</del>
+</body>
+</html>
