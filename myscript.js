@@ -65,3 +65,34 @@ function validateForm()
     return isValid;
 
 }
+
+
+function loginCheck()
+{
+    const email=document.getElementById("email").value;
+    const password=document.getElementById("password").value;
+
+    const emailError=document.getElementById("email-error");
+    const passwordError=document.getElementById("password-error");
+
+    emailError.textContent="";
+    password.textContent="";
+
+    
+    let isValid=true;
+
+    if(email === "" || !email.includes("@"))
+    {
+        emailError.textContent="Provide a valid email id.";
+        isValid=false;
+    }
+
+    if(password ==="" || password.length < 8)
+    {
+        passwordError.textContent="Enter a valid password.";
+        isValid=false;
+    }
+
+    return isValid;
+
+}
