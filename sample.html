@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+      function sum()
+      {
+        var a=parseInt(document.getElementById("num1").value);
+        var b=parseInt(document.getElementById("num2").value);
+        document.getElementById("result").innerText=a+b;
+      }
+    </script>
+</head>
+<body>
+    <h2>This is a heading</h2>
+    <button onclick="alert('Hi there')">Click here</button>
+    <br>
+    Number 1:<input type="number" id="num1"><br>
+    Number 2:<input type="number" id="num2"><br>
+    <button onclick="sum()">Sum</button>
+
+    <p id="result"></p>
+    <script src="test.js"></script>
+</body>
+</html>
